@@ -7,7 +7,7 @@ public class Main
     {
         int number=10500;
 
-        double result=((double)(number / 10) /10);
+        double result=(((double)number / 10) /10);
 
         System.out.printf("(10500/10)/10 = %s \n", result);
 
