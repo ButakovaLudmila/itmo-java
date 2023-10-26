@@ -5,65 +5,65 @@ import java.util.Scanner;
 public class Calculator {
 
     //Результирующие переменные
-    private int resulti;
-    private double resultd;
-    private long resultl;
+    private int resultI;
+    private double resultD;
+    private long resultL;
 
     //Входные переменные
-    private int numi1;
-    private int numi2;
-    private double numd1;
-    private double numd2;
-    private long numl1;
-    private long numl2;
+    private int numI1;
+    private int numI2;
+    private double numD1;
+    private double numD2;
+    private long numL1;
+    private long numL2;
 
     //Сеттеры и геттеры
-    public int getNumi1() {
-        return numi1;
+    public int getnumI1() {
+        return numI1;
     }
 
-    public void setNumi1(int numi1) {
-        this.numi1 = numi1;
+    public void setnumI1(int numI1) {
+        this.numI1 = numI1;
     }
 
-    public int getNumi2() {
-        return numi2;
+    public int getnumI2() {
+        return numI2;
     }
 
-    public void setNumi2(int numi2) {
-        this.numi2 = numi2;
+    public void setnumI2(int numI2) {
+        this.numI2 = numI2;
     }
 
-    public double getNumd1() {
-        return numd1;
+    public double getnumD1() {
+        return numD1;
     }
 
-    public void setNumd1(double numd1) {
-        this.numd1 = numd1;
+    public void setnumD1(double numD1) {
+        this.numD1 = numD1;
     }
 
-    public double getNumd2() {
-        return numd2;
+    public double getnumD2() {
+        return numD2;
     }
 
-    public void setNumd2(double numd2) {
-        this.numd2 = numd2;
+    public void setnumD2(double numD2) {
+        this.numD2 = numD2;
     }
 
-    public long getNuml1() {
-        return numl1;
+    public long getnumL1() {
+        return numL1;
     }
 
-    public void setNuml1(long numl1) {
-        this.numl1 = numl1;
+    public void setnumL1(long numL1) {
+        this.numL1 = numL1;
     }
 
-    public long getNuml2() {
-        return numl2;
+    public long getnumL2() {
+        return numL2;
     }
 
-    public void setNuml2(long numl2) {
-        this.numl2 = numl2;
+    public void setnumL2(long numL2) {
+        this.numL2 = numL2;
     }
 
     //Математические действия
@@ -72,56 +72,56 @@ public class Calculator {
 
     //Сложение
     public int addition(int num1, int num2) {
-        resulti = num1 + num2;
-        return resulti;
+        resultI = num1 + num2;
+        return resultI;
     }
 
     public double addition(double num1, double num2) {
-        resultd = num1 + num2;
-        return resultd;
+        resultD = num1 + num2;
+        return resultD;
     }
 
     public long addition(long num1, long num2) {
-        resultl = num1 + num2;
-        return resultl;
+        resultL = num1 + num2;
+        return resultL;
     }
 
     //Вычитание
     public int substraction(int num1, int num2) {
-        resulti = num1 - num2;
-        return resulti;
+        resultI = num1 - num2;
+        return resultI;
     }
 
     public double substraction(double num1, double num2) {
-        resultd = num1 - num2;
-        return resultd;
+        resultD = num1 - num2;
+        return resultD;
     }
 
     public long substraction(long num1, long num2) {
-        resultl = num1 - num2;
-        return resultl;
+        resultL = num1 - num2;
+        return resultL;
     }
 
     //Умножение
     public int multiplication(int num1, int num2) {
-        resulti = num1 * num2;
-        return resulti;
+        resultI = num1 * num2;
+        return resultI;
     }
 
     public double multiplication(double num1, double num2) {
-        resultd = num1 * num2;
-        return resultd;
+        resultD = num1 * num2;
+        return resultD;
     }
 
     public long multiplication(long num1, long num2) {
-        resultl = num1 * num2;
-        return resultl;
+        resultL = num1 * num2;
+        return resultL;
     }
 
     //Деление
     public double division(double num1, double num2) {
-        resultd = num1 / num2;
-        return resultd;
+        resultD = num1 / num2;
+        return resultD;
     }
 
     //Ввод-вывод данных
@@ -139,19 +139,19 @@ public class Calculator {
         System.out.println("Первое число: ");
 
         if (scanner.hasNextInt()) {
-            numi1 = scanner.nextInt();
-            calculator.setNumi1(numi1);
-            calculator.setNumd1(numi1);
+            numI1 = scanner.nextInt();
+            calculator.setnumI1(numI1);
+            calculator.setnumD1(numI1);
             i1 = 1;
         } else {
             if (scanner.hasNextDouble()) {
-                calculator.setNumd1(scanner.nextDouble());
+                calculator.setnumD1(scanner.nextDouble());
                 d1 = 1;
             } else {
                 if (scanner.hasNextLong()) {
-                    numl1 = scanner.nextLong();
-                    calculator.setNuml1(numl1);
-                    calculator.setNumd1(numl1);
+                    numL1 = scanner.nextLong();
+                    calculator.setnumL1(numL1);
+                    calculator.setnumD1(numL1);
                     l1 = 1;
                 } else {
                     System.out.println("Вы ввели некорректное значение ");
@@ -161,19 +161,19 @@ public class Calculator {
 
         System.out.println("Второе число: ");
         if (scanner.hasNextInt()) {
-            numi2 = scanner.nextInt();
-            calculator.setNumi2(numi2);
-            calculator.setNumd2(numi2);
+            numI2 = scanner.nextInt();
+            calculator.setnumI2(numI2);
+            calculator.setnumD2(numI2);
             i2 = 1;
         } else {
             if (scanner.hasNextDouble()) {
-                calculator.setNumd2(scanner.nextDouble());
+                calculator.setnumD2(scanner.nextDouble());
                 d2 = 1;
             } else {
                 if (scanner.hasNextLong()) {
-                    numl2 = scanner.nextLong();
-                    calculator.setNuml2(numl2);
-                    calculator.setNumd2(numl2);
+                    numL2 = scanner.nextLong();
+                    calculator.setnumL2(numL2);
+                    calculator.setnumD2(numL2);
                     l2 = 1;
                 } else {
                     System.out.println("Вы ввели некорректное значение ");
@@ -188,50 +188,50 @@ public class Calculator {
             {
                 switch (operator) {
                     case POS:
-                        this.resulti = calculator.addition(calculator.getNumi1(), calculator.getNumi2());
+                        this.resultI = calculator.addition(calculator.getnumI1(), calculator.getnumI2());
                         break;
                     case NEG:
-                        this.resulti = calculator.substraction(calculator.getNumi1(), calculator.getNumi2());
+                        this.resultI = calculator.substraction(calculator.getnumI1(), calculator.getnumI2());
                         break;
                     case MULT:
-                        this.resulti = calculator.multiplication(calculator.getNumi1(), calculator.getNumi2());
+                        this.resultI = calculator.multiplication(calculator.getnumI1(), calculator.getnumI2());
                         break;
                     default:
                         System.out.println("Данные некорректны");
                 }
-                System.out.println("Результат = " + resulti);
+                System.out.println("Результат = " + resultI);
             }
         } else {
             if (l1 == 1 || l2 == 1) {
                 switch (operator) {
                     case POS:
-                        resultl = calculator.addition(calculator.getNuml1(), calculator.getNuml2());
+                        resultL = calculator.addition(calculator.getnumL1(), calculator.getnumL2());
                         break;
                     case NEG:
-                        resultl = calculator.substraction(calculator.getNuml1(), calculator.getNuml2());
+                        resultL = calculator.substraction(calculator.getnumL1(), calculator.getnumL2());
                         break;
                     case MULT:
-                        this.resultl = calculator.multiplication(calculator.getNuml1(), calculator.getNuml2());
+                        this.resultL = calculator.multiplication(calculator.getnumL1(), calculator.getnumL2());
                         break;
                     default:
                         System.out.println("Данные некорректны");
                 }
-                System.out.println("Результат = " + resultd);
+                System.out.println("Результат = " + resultD);
             } else {
 
                 if (d1 == 1 | d2 == 1) {
                     switch (operator) {
                         case POS:
-                            resultd = calculator.addition(calculator.getNumd1(), calculator.getNumd2());
+                            resultD = calculator.addition(calculator.getnumD1(), calculator.getnumD2());
                             break;
                         case NEG:
-                            resultd = calculator.substraction(calculator.getNumd1(), calculator.getNumd2());
+                            resultD = calculator.substraction(calculator.getnumD1(), calculator.getnumD2());
                             break;
                         case MULT:
-                            resultd = calculator.multiplication(calculator.getNumd1(), calculator.getNumd2());
+                            resultD = calculator.multiplication(calculator.getnumD1(), calculator.getnumD2());
                             break;
                         case DIV:
-                            resultd = calculator.division(calculator.getNumd1(), calculator.getNumd2());
+                            resultD = calculator.division(calculator.getnumD1(), calculator.getnumD2());
                             break;
                         default:
                             System.out.println("Данные некорректны");
@@ -239,8 +239,8 @@ public class Calculator {
                     }
 
                     double scale = Math.pow(10.0, 2);
-                    resultd = Math.round(resultd * scale) / scale;
-                    System.out.println("Результат = " + resultd);
+                    resultD = Math.round(resultD * scale) / scale;
+                    System.out.println("Результат = " + resultD);
                 }
             }
         }
