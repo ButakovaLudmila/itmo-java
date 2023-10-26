@@ -201,7 +201,8 @@ public class Calculator {
                     case mult:
                         this.resulti = calculator.multiplication(calculator.getNumi1(), calculator.getNumi2());
                         break;
-
+                    default:
+                        System.out.println("Данные некорректны");
                 }
                 System.out.println("Результат = " + resulti);
             }
@@ -217,7 +218,8 @@ public class Calculator {
                     case mult:
                         this.resultl = calculator.multiplication(calculator.getNuml1(), calculator.getNuml2());
                         break;
-
+                    default:
+                        System.out.println("Данные некорректны");
                 }
                 System.out.println("Результат = " + resultd);
             } else {
@@ -236,6 +238,8 @@ public class Calculator {
                         case div:
                             resultd = calculator.division(calculator.getNumd1(), calculator.getNumd2());
                             break;
+                        default:
+                            System.out.println("Данные некорректны");
 
                     }
 
