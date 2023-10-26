@@ -69,11 +69,6 @@ public class Calculator {
     //Математические действия
 
 
-    private enum operation {
-        pos, neg, mult, div
-    }
-
-    //Методы с перегрузками
 
     //Сложение
     public int addition(int num1, int num2) {
@@ -186,19 +181,19 @@ public class Calculator {
             }
         }
 
-        System.out.println("Какую операцию хотите осуществить? ('pos', 'neg', 'mult', 'div')");
-        operation operator = operation.valueOf(scanner.next());
+        System.out.println("Какую операцию хотите осуществить? ('POS', 'NEG', 'MULT', 'DIV')");
+        Operation operator = Operation.valueOf(scanner.next());
 
         if (i1 == 1 && i2 == 1) {
             {
                 switch (operator) {
-                    case pos:
+                    case POS:
                         this.resulti = calculator.addition(calculator.getNumi1(), calculator.getNumi2());
                         break;
-                    case neg:
+                    case NEG:
                         this.resulti = calculator.substraction(calculator.getNumi1(), calculator.getNumi2());
                         break;
-                    case mult:
+                    case MULT:
                         this.resulti = calculator.multiplication(calculator.getNumi1(), calculator.getNumi2());
                         break;
                     default:
@@ -209,13 +204,13 @@ public class Calculator {
         } else {
             if (l1 == 1 || l2 == 1) {
                 switch (operator) {
-                    case pos:
+                    case POS:
                         resultl = calculator.addition(calculator.getNuml1(), calculator.getNuml2());
                         break;
-                    case neg:
+                    case NEG:
                         resultl = calculator.substraction(calculator.getNuml1(), calculator.getNuml2());
                         break;
-                    case mult:
+                    case MULT:
                         this.resultl = calculator.multiplication(calculator.getNuml1(), calculator.getNuml2());
                         break;
                     default:
@@ -226,16 +221,16 @@ public class Calculator {
 
                 if (d1 == 1 | d2 == 1) {
                     switch (operator) {
-                        case pos:
+                        case POS:
                             resultd = calculator.addition(calculator.getNumd1(), calculator.getNumd2());
                             break;
-                        case neg:
+                        case NEG:
                             resultd = calculator.substraction(calculator.getNumd1(), calculator.getNumd2());
                             break;
-                        case mult:
+                        case MULT:
                             resultd = calculator.multiplication(calculator.getNumd1(), calculator.getNumd2());
                             break;
-                        case div:
+                        case DIV:
                             resultd = calculator.division(calculator.getNumd1(), calculator.getNumd2());
                             break;
                         default:
