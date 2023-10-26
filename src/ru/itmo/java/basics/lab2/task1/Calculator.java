@@ -69,7 +69,6 @@ public class Calculator {
     //Математические действия
 
 
-
     //Сложение
     public int addition(int num1, int num2) {
         resultI = num1 + num2;
@@ -123,6 +122,17 @@ public class Calculator {
         resultD = num1 / num2;
         return resultD;
     }
+
+    public double division(int num1, int num2) {
+        resultD = (double) num1 / num2;
+        return resultD;
+    }
+
+    public double division(long num1, long num2) {
+        resultD = (double) num1 / num2;
+        return resultD;
+    }
+
 
     //Ввод-вывод данных
     public void Calculate() {
@@ -183,7 +193,7 @@ public class Calculator {
 
         System.out.println("Какую операцию хотите осуществить? ('POS', 'NEG', 'MULT', 'DIV')");
         Operation operator = Operation.valueOf(scanner.next());
-
+        outer:
         if (i1 == 1 && i2 == 1) {
             {
                 switch (operator) {
@@ -196,6 +206,12 @@ public class Calculator {
                     case MULT:
                         this.resultI = calculator.multiplication(calculator.getnumI1(), calculator.getnumI2());
                         break;
+                    case DIV:
+                        this.resultD = calculator.division(calculator.getnumI1(), calculator.getnumI2());
+                        double scale = Math.pow(10.0, 2);
+                        resultD = Math.round(resultD * scale) / scale;
+                        System.out.println("Результат проверка срабатывания Int = " + resultD);
+                        break outer;
                     default:
                         System.out.println("Данные некорректны");
                 }
@@ -213,6 +229,12 @@ public class Calculator {
                     case MULT:
                         this.resultL = calculator.multiplication(calculator.getnumL1(), calculator.getnumL2());
                         break;
+                    case DIV:
+                        this.resultD = calculator.division(calculator.getnumL1(), calculator.getnumL2());
+                        double scale = Math.pow(10.0, 2);
+                        resultD = Math.round(resultD * scale) / scale;
+                        System.out.println("Результат проверка срабатывания Long = " + resultD);
+                        break outer;
                     default:
                         System.out.println("Данные некорректны");
                 }
