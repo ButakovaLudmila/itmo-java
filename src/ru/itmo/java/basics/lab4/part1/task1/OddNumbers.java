@@ -23,6 +23,10 @@ public class OddNumbers {
             }
         }
     }
+    public static void main(String[] args) {
+        OddNumbers.fillingArray();
+        OddNumbers.oddSort(intArray);
+    }
 
 
 }

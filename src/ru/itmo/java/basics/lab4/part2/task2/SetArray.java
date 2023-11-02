@@ -22,4 +22,8 @@ public class SetArray {
         System.out.print("Массив: " + Arrays.toString(intArray));
 
     }
+    public static void main(String[] args) {
+        SetArray.setIntArray();
+        SetArray.printValues();
+    }
 }

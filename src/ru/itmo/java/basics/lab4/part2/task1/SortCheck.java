@@ -50,4 +50,9 @@ public class SortCheck {
             System.out.print("Попробуйте снова отсортировать массив по возрастанию");
         }
     }
+    public static void main(String[] args) {
+        SortCheck.setIntArray();
+        SortCheck.bubbleSort(intArray1);
+        SortCheck.printValues();
+    }
 }

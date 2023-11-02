@@ -3,24 +3,12 @@ package ru.itmo.java.basics.lab4.part1.task4;
 import java.util.Scanner;
 
 public class ThreeNumbers {
-    static int num1;
-    static int num2;
-    static int num3;
-    static boolean result;
+    public int num1;
+    public int num2;
+    public int num3;
+    public boolean result;
 
-    public static int getNum1() {
-        return num1;
-    }
-
-    public static int getNum2() {
-        return num2;
-    }
-
-    public static int getNum3() {
-        return num3;
-    }
-
-    static void setNumbers() {
+    public void setNumbers() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         num1 = scanner.nextInt();
@@ -30,18 +18,22 @@ public class ThreeNumbers {
         num3 = scanner.nextInt();
     }
 
-
-    static String res() {
-        if (getNum2() > getNum1() && getNum3() > getNum2()) {
+    public String res() {
+        if (num2 > num1 && num3 > num2) {
             result = true;
         }
         return "Результат: " + result;
     }
 
-    static void printValue() {
+    public void printValue() {
         System.out.println(res());
     }
 
+    public static void main(String[] args) {
+        ThreeNumbers tn = new ThreeNumbers();
+        tn.setNumbers();
+        tn.printValue();
+    }
 }
 
 

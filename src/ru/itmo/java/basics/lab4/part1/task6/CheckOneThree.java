@@ -31,4 +31,9 @@ public class CheckOneThree {
         System.out.println();
         System.out.print(checkOneThree(intArray));
     }
+
+    public static void main(String[] args) {
+        CheckOneThree.setIntArray();
+        CheckOneThree.printValues();
+    }
 }

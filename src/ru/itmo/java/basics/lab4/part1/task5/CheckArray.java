@@ -44,4 +44,8 @@ public class CheckArray {
         System.out.println();
         System.out.print(checkThree(intArray));
     }
+    public static void main(String[] args) {
+        CheckArray.setIntArray();
+        CheckArray.printValues();
+    }
 }

@@ -44,4 +44,8 @@ public class UniqueNumber {
         System.out.println();
         System.out.print("Первое уникальное значение массива: " + findUnique(intArray));
     }
+    public static void main(String[] args) {
+        UniqueNumber.setIntArray();
+        UniqueNumber.printValues();
+    }
 }

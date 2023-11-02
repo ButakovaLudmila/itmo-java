@@ -45,15 +45,10 @@ public class Division {
         divThreeFive(intArray);
     }
 
-
-
-
-
-
-
-
-
-
+    public static void main(String[] args) {
+        Division.fillingArray();
+        Division.printValues();
+    }
 
 }
 

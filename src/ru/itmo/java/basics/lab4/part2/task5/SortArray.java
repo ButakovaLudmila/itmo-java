@@ -63,4 +63,10 @@ public class SortArray {
     static void printArray2() {
         System.out.print("Массив 2: " + Arrays.toString(intArray));
     }
+    public static void main(String[] args) {
+        SortArray.setIntArray();
+        SortArray.printArray1();
+        SortArray.sortArray(0, intArray.length - 1);
+        SortArray.printArray2();
+    }
 }

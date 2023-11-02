@@ -40,4 +40,10 @@ public class ChangePosition {
     static void printArray2() {
         System.out.print("Массив 2: " + Arrays.toString(intArray));
     }
+    public static void main(String[] args) {
+        ChangePosition.setIntArray();
+        ChangePosition.printArray1();
+        ChangePosition.changePosition(intArray);
+        ChangePosition.printArray2();
+    }
 }
