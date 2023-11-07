@@ -3,7 +3,7 @@ package ru.itmo.java.basics.lab6.task4;
 import java.util.Scanner;
 
 public class Parent {
-    public Integer a;
+    protected Integer a;
 
     public void setA() {
         Scanner scanner = new Scanner(System.in);
