@@ -15,10 +15,12 @@ public class Plane {
 
     }
     public void innerMethodCall() {
+        double a=1666.76;
+        double b=1888.98;
         Plane.Wing wing1 = new Plane.Wing();
-        wing1.setWeight(1666.78);
+        wing1.setWeight(a);
         Plane.Wing wing2 = new Plane.Wing();
-        wing2.setWeight(1798.99);
+        wing2.setWeight(b);
         wing1.printWeight();
         wing2.printWeight();
     }
