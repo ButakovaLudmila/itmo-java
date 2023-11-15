@@ -15,8 +15,8 @@ public class Unique {
         return list;
     }
 
-    public Collection<Integer> uniques(List<Integer> list) {
-        Set<Integer> set = new HashSet<>(list);
+    public <T> Collection<T> uniques(List<T> list) {
+        Set<T> set = new HashSet<>(list);
         return set;
     }
 
