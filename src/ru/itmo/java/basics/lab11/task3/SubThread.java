@@ -10,7 +10,7 @@ public class SubThread extends Thread {
     @Override
     public void run() {
         Counter counter = new Counter();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             synchronized (lock) {
                 try {
                     counter.increment();
